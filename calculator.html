@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" href="./styles.css">
+<script src="./calculator.js"></script>
+</head>
+<body>
+   <div>
+       <label for="num1">Number one:</label>
+        <input type="text" id="num1">
+    </div>
+    <div>
+        <label for="num2">Number two:</label>
+        <input type="text" id="num2">
+    </div>
+<div style = "position:relative; left:80px;">
+    <button type="button" onclick="action('+')">+</button>
+    <button type="button" onclick="action('-')">-</button>
+    <button type="button" onclick="action('*')">*</button>
+    <button type="button" onclick="action('/')">/</button>
+</div>
+
+
+<div id="answer" >
+    <label for="result">Result:</label>
+    <input type="text" id="result">
+</div>
+
+</body>
+</html>
