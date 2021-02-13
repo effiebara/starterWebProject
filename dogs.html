@@ -4,23 +4,28 @@
 <title>Dogs list</title>
 <link rel="stylesheet" href="./styles.css">
 <script src="./dogs.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
 
 <h1>Add a new dog</h1>
-
+<div id="dogForm">
     <label for="dogName">Dog's name:</label><br>
-    <input type="text" id="dogName" name="dogName" placeholder="Give your dog's name"><br>
+    <input class="inputFields" type="text" id="dogName" name="dogName" placeholder="Give your dog's name"><br>
     <label for="dogBreed">Dog's breed:</label><br>
-    <input type="text" id="dogBreed" name="dogBreed" placeholder="Give your dog's breed"><br><br>
+    <input class="inputFields"  type="text" id="dogBreed" name="dogBreed" placeholder="Give your dog's breed"><br><br>
     <button onclick="createDog()">Create new dog</button>
-  
+</div>
 <h2>All the dogs</h2>
 
 <ul id="dogs"></ul>
 <button onclick="showDogs()">Show the dogs</button>
 
+
+<button onclick="ChangeInputFieldsColor()">Change the color of the input fields</button>
+<button onclick="hideDogForm()">Hide dog form</button>
+<button onclick="showDogForm()">Show dog form</button>
 
 
 

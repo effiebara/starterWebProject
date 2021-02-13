@@ -1,5 +1,5 @@
 
-let dog0 = {   // <<< is this the right way?
+let dog0 = {   // <<< is this the correct way?
     name:"",
     breed:""
 };
@@ -30,4 +30,29 @@ function showDogs(){
     }
 
 }
+
+function ChangeInputFieldsColor(){
+    // let inputFields = document.getElementsByClassName("inputFields");
+    // for(var i=0; i<inputFields.length; i++){
+    //     inputFields[i].style.backgroundColor = "red";
+    // }
+    $(".inputFields").css("backgroundColor", "red");
+}
+
+function hideDogForm(){
+    // let inputFields = document.getElementsByClassName("inputFields");
+    // for(var i=0; i<inputFields.length; i++){
+    //     inputFields[i].style.backgroundColor = "red";
+    // }
+    $("#dogForm").hide();
+}
+
+function showDogForm(){
+    // let inputFields = document.getElementsByClassName("inputFields");
+    // for(var i=0; i<inputFields.length; i++){
+    //     inputFields[i].style.backgroundColor = "red";
+    // }
+    $("#dogForm").show();
+}
+
 
